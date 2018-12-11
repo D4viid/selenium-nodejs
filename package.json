@@ -1,0 +1,57 @@
+{
+  "name": "occ2016",
+  "private": true,
+  "description": "L'Occitane Build Front V2",
+  "version": "2.1.5",
+  "main": "index.js",
+  "browser": {},
+  "scripts": {
+    "tests-auto": "node index"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "app/**/*.js": [
+        "eslint",
+        "git add"
+      ],
+      "app/**/*.scss": [
+        "stylelint",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "**/vendors/**/*.js",
+      "**/vendors/**/*.scss"
+    ],
+    "concurrent": true,
+    "subTaskConcurrency": 3
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fs-extra": "^5.0.0",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  },
+  "browserslist": [
+    "defaults",
+    "IE 10",
+    "Safari 6"
+  ],
+  "babel": {
+    "presets": [
+      "es2015-ie"
+    ],
+    "plugins": [
+      "transform-es2015-modules-commonjs"
+    ]
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  }
+}
