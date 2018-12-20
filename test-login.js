@@ -15,7 +15,7 @@ function MyAccountLogin(driver, idCountry) {
 
   logs.push(logger.Log(1, 'Starting test : Login to MyAccount '));
 
-  webTester.GoToURL('https://stage-ocms.loccitane.com/?c='+ idCountry);
+  webTester.GoToURL('https://-ocms.loccitane.com/?c='+ idCountry);
 
 
   var rewardBtn = webTester.FindByID('rewardQuickLink');
