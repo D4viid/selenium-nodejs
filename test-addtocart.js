@@ -9,7 +9,7 @@ const addToCart = function addToCart(driver, idCountry) {
     driver.FindByID('ctl00_ContentPlaceHolder1_ctl00_linkContinueCheckoutStep1_bottom').click().then(() => {
       logs.push(logger.Log(1, 'Step 1 OK'));
       driver.FindByID('ctl00_ContentPlaceHolder1_ctl00_txtCrmFieldAlready_login').sendKeys('ghromis@loccitane.com');
-      driver.FindByID('ctl00_ContentPlaceHolder1_ctl00_txtCrmFieldAlready_password').sendKeys('greggreg');
+      driver.FindByID('ctl00_ContentPlaceHolder1_ctl00_txtCrmFieldAlready_password').sendKeys('');
       driver.FindByID('ctl00_ContentPlaceHolder1_ctl00_btnCrmField_Button').click().then(() => {
         logs.push(logger.Log(1, 'Login checkout OK'));
 
