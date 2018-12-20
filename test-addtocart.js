@@ -1,6 +1,6 @@
 const logger = require('./logger');
 
-const url = 'https://stage-ocms.loccitane.com/baume-yeux-pr%C3%A9cieux-immortelle,74,1,34008,622427.htm';
+const url = 'https://-ocms.loccitane.com/baume-yeux-pr%C3%A9cieux-immortelle,74,1,34008,622427.htm';
 
 const addToCart = function addToCart(driver, idCountry) {
   const logs = [];
