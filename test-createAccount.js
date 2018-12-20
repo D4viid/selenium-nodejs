@@ -21,7 +21,7 @@ function CreateAccount(driver, idCountry) {
 
   logs.push(logger.Log(1, 'Starting test : Create Account on MyAccount'));
 
-  webTester.GoToURL('https://stage-ocms.loccitane.com/?c=' + idCountry);
+  webTester.GoToURL('https://-ocms.loccitane.com/?c=' + idCountry);
   var rewardBtn = webTester.FindByID('rewardQuickLink');
 
 
